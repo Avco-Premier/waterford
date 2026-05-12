@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solis | Preston, CT</title>
-    <meta name="description" content="Casual locale dishing up pies such as BBQ chicken and spaghetti and meatballs, plus calzones and grinders. Located in Lu-Mac's Package Store in Preston, CT.">
+    <title>Solis | Preston Pizza, Calzones & Grinders</title>
+    <meta name="twitter:description" content="Pizza, calzones, grinders, spaghetti and meatballs, and casual Italian favorites from Solis in Preston, CT.">
+    <meta name="twitter:title" content="Solis | Preston, CT">
+    <meta property="og:description" content="Pizza, calzones, grinders, spaghetti and meatballs, and casual Italian favorites from Solis in Preston, CT.">
+    <meta property="og:title" content="Solis | Preston, CT">
+    <meta name="description" content="Solis serves pizza, calzones, grinders, spaghetti and meatballs, and casual Italian favorites at Lu-Mac's Package Store in Preston, CT.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -554,6 +558,46 @@
         .parallax-nav a:hover .nav-label { opacity: 1; }
 
         @media (max-width: 768px) { .parallax-nav { display: none; } }
+    
+
+/* Visual polish pass: clearer cards, buttons, and media rhythm. */
+:where(.btn, .btn-gold, .btn-primary, .btn-outline, .btn-outline-gold, .btn-cream, .btn-white, .nav-order, .mobile-order, .sticky-order, .location-card a) {
+  border-radius: 999px;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+:where(.btn, .btn-gold, .btn-primary, .btn-outline, .btn-outline-gold, .btn-cream, .btn-white, .nav-order, .mobile-order, .location-card a):hover {
+  transform: translateY(-2px);
+}
+
+:where(.menu-item, .location-info, .info-block, .feature-card, .card, .location-card) {
+  box-shadow: 0 18px 48px rgba(23, 16, 12, 0.12);
+}
+
+:where(.menu-item img, .about-img-main, .about-img-accent, .story-image, .hero-media img) {
+  object-fit: cover;
+}
+
+:where(.hero-title, .section-title, .page-title) {
+  text-wrap: balance;
+}
+
+:where(.hero-tagline, .about-body, .menu-intro, .callout-sub, .footer-desc, .page-subtitle) {
+  text-wrap: pretty;
+}
+
+@media (max-width: 640px) {
+  :where(.button-row, .hero-actions, .location-actions, .menu-cta-wrap) {
+    gap: 12px;
+  }
+
+  :where(.btn, .btn-gold, .btn-primary, .btn-outline, .btn-outline-gold, .btn-cream, .btn-white) {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.25;
+  }
+}
+
     </style>
 </head>
 <body>

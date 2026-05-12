@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waterford Pizza Palace | Waterford, CT</title>
-    <meta name="description" content="Waterford Pizza Palace - Authentic pizza and Italian cuisine in Waterford, Connecticut. Family recipes, fresh ingredients, delivery & catering available.">
+    <title>Waterford Pizza Palace | Waterford Pizza & Italian Favorites</title>
+    <meta name="twitter:description" content="Pizza, Italian favorites, delivery, catering, and online ordering from Waterford Pizza Palace in Waterford, CT.">
+    <meta name="twitter:title" content="Waterford Pizza Palace | Waterford, CT">
+    <meta property="og:description" content="Pizza, Italian favorites, delivery, catering, and online ordering from Waterford Pizza Palace in Waterford, CT.">
+    <meta property="og:title" content="Waterford Pizza Palace | Waterford, CT">
+    <meta name="description" content="Waterford Pizza Palace serves pizza, Italian favorites, delivery, catering, and online ordering in Waterford, CT.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1007,6 +1011,46 @@
         .stagger-1 { transition-delay: 0.1s; }
         .stagger-2 { transition-delay: 0.2s; }
         .stagger-3 { transition-delay: 0.3s; }
+    
+
+/* Visual polish pass: clearer cards, buttons, and media rhythm. */
+:where(.btn, .btn-gold, .btn-primary, .btn-outline, .btn-outline-gold, .btn-cream, .btn-white, .nav-order, .mobile-order, .sticky-order, .location-card a) {
+  border-radius: 999px;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+:where(.btn, .btn-gold, .btn-primary, .btn-outline, .btn-outline-gold, .btn-cream, .btn-white, .nav-order, .mobile-order, .location-card a):hover {
+  transform: translateY(-2px);
+}
+
+:where(.menu-item, .location-info, .info-block, .feature-card, .card, .location-card) {
+  box-shadow: 0 18px 48px rgba(23, 16, 12, 0.12);
+}
+
+:where(.menu-item img, .about-img-main, .about-img-accent, .story-image, .hero-media img) {
+  object-fit: cover;
+}
+
+:where(.hero-title, .section-title, .page-title) {
+  text-wrap: balance;
+}
+
+:where(.hero-tagline, .about-body, .menu-intro, .callout-sub, .footer-desc, .page-subtitle) {
+  text-wrap: pretty;
+}
+
+@media (max-width: 640px) {
+  :where(.button-row, .hero-actions, .location-actions, .menu-cta-wrap) {
+    gap: 12px;
+  }
+
+  :where(.btn, .btn-gold, .btn-primary, .btn-outline, .btn-outline-gold, .btn-cream, .btn-white) {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.25;
+  }
+}
+
     </style>
 </head>
 <body>
